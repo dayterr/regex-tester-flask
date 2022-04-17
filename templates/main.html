@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h2>Welcome to regex testing tool!</h2>
+  <form method="POST" action="/">
+    <input type="text" name="regex">
+    <input type="text" name="text">
+    <button type="submit">Submit</button>
+  </form>
+  <a target="_blank" href="/history/"> History </a>
+  {% if is_result %}
+    <p>
+      {% if is_true %}
+        True
+      {% else %}
+        False
+      {% endif %}
+    </p>
+  {% endif %}
+</body>
+</html>
